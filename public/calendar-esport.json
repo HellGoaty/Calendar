@@ -1,0 +1,386 @@
+[
+  {
+    "title": "G2 vs GX",
+    "start": "2025-01-27T18:30:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "GX",
+      "logo": "http://static.lolesports.com/teams/1704790322129_GX.png"
+    }
+  },
+  {
+    "title": "KC vs TH",
+    "start": "2025-01-27T19:15:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "TH",
+      "logo": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png"
+    }
+  },
+  {
+    "title": "RGE vs G2",
+    "start": "2025-02-01T18:30:00Z",
+    "team1": {
+      "code": "RGE",
+      "logo": "http://static.lolesports.com/teams/1705054928404_RGE.png"
+    },
+    "team2": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    }
+  },
+  {
+    "title": "VIT vs KC",
+    "start": "2025-02-01T20:00:00Z",
+    "team1": {
+      "code": "VIT",
+      "logo": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png"
+    },
+    "team2": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    }
+  },
+  {
+    "title": "FNC vs KC",
+    "start": "2025-02-02T18:30:00Z",
+    "team1": {
+      "code": "FNC",
+      "logo": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png"
+    },
+    "team2": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    }
+  },
+  {
+    "title": "G2 vs MKOI",
+    "start": "2025-02-02T20:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "MKOI",
+      "logo": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png"
+    }
+  },
+  {
+    "title": "KC vs BDS",
+    "start": "2025-02-03T18:30:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "BDS",
+      "logo": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png"
+    }
+  },
+  {
+    "title": "G2 vs TH",
+    "start": "2025-02-03T19:15:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "TH",
+      "logo": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png"
+    }
+  },
+  {
+    "title": "G2 vs GX",
+    "start": "2025-02-15T19:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "GX",
+      "logo": "http://static.lolesports.com/teams/1704790322129_GX.png"
+    }
+  },
+  {
+    "title": "KC vs VIT",
+    "start": "2025-02-16T19:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "VIT",
+      "logo": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png"
+    }
+  },
+  {
+    "title": "FNC vs G2",
+    "start": "2025-02-17T17:00:00Z",
+    "team1": {
+      "code": "FNC",
+      "logo": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png"
+    },
+    "team2": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    }
+  },
+  {
+    "title": "KC vs MKOI",
+    "start": "2025-02-17T19:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "MKOI",
+      "logo": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png"
+    }
+  },
+  {
+    "title": "KC vs G2",
+    "start": "2025-02-24T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    }
+  },
+  {
+    "title": "KC vs FNC",
+    "start": "2025-03-01T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "FNC",
+      "logo": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png"
+    }
+  },
+  {
+    "title": "G2 vs KC",
+    "start": "2025-03-02T17:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    }
+  },
+  {
+    "title": "G2 vs MKOI",
+    "start": "2025-03-29T17:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "MKOI",
+      "logo": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png"
+    }
+  },
+  {
+    "title": "KC vs MKOI",
+    "start": "2025-03-30T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "MKOI",
+      "logo": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png"
+    }
+  },
+  {
+    "title": "BDS vs KC",
+    "start": "2025-04-05T14:00:00Z",
+    "team1": {
+      "code": "BDS",
+      "logo": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png"
+    },
+    "team2": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    }
+  },
+  {
+    "title": "G2 vs TH",
+    "start": "2025-04-05T16:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "TH",
+      "logo": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png"
+    }
+  },
+  {
+    "title": "KC vs FNC",
+    "start": "2025-04-06T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "FNC",
+      "logo": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png"
+    }
+  },
+  {
+    "title": "RGE vs G2",
+    "start": "2025-04-12T14:00:00Z",
+    "team1": {
+      "code": "RGE",
+      "logo": "http://static.lolesports.com/teams/1705054928404_RGE.png"
+    },
+    "team2": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    }
+  },
+  {
+    "title": "KC vs SK",
+    "start": "2025-04-12T16:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "SK",
+      "logo": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png"
+    }
+  },
+  {
+    "title": "TH vs KC",
+    "start": "2025-04-14T17:00:00Z",
+    "team1": {
+      "code": "TH",
+      "logo": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png"
+    },
+    "team2": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    }
+  },
+  {
+    "title": "KC vs GX",
+    "start": "2025-04-19T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "GX",
+      "logo": "http://static.lolesports.com/teams/1704790322129_GX.png"
+    }
+  },
+  {
+    "title": "BDS vs G2",
+    "start": "2025-04-20T17:00:00Z",
+    "team1": {
+      "code": "BDS",
+      "logo": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png"
+    },
+    "team2": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    }
+  },
+  {
+    "title": "GX vs G2",
+    "start": "2025-04-26T13:00:00Z",
+    "team1": {
+      "code": "GX",
+      "logo": "http://static.lolesports.com/teams/1704790322129_GX.png"
+    },
+    "team2": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    }
+  },
+  {
+    "title": "G2 vs FNC",
+    "start": "2025-04-27T13:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "FNC",
+      "logo": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png"
+    }
+  },
+  {
+    "title": "KC vs RGE",
+    "start": "2025-05-03T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "RGE",
+      "logo": "http://static.lolesports.com/teams/1705054928404_RGE.png"
+    }
+  },
+  {
+    "title": "G2 vs VIT",
+    "start": "2025-05-04T17:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "VIT",
+      "logo": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png"
+    }
+  },
+  {
+    "title": "G2 vs SK",
+    "start": "2025-05-10T15:00:00Z",
+    "team1": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    },
+    "team2": {
+      "code": "SK",
+      "logo": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png"
+    }
+  },
+  {
+    "title": "KC vs VIT",
+    "start": "2025-05-10T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "VIT",
+      "logo": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png"
+    }
+  },
+  {
+    "title": "KC vs G2",
+    "start": "2025-05-11T17:00:00Z",
+    "team1": {
+      "code": "KC",
+      "logo": "http://static.lolesports.com/teams/1704714951336_KC.png"
+    },
+    "team2": {
+      "code": "G2",
+      "logo": "http://static.lolesports.com/teams/G2-FullonDark.png"
+    }
+  }
+]
