@@ -1,7 +1,11 @@
 {
   "crons": [
     {
-      "path": "/api/refresh-matches",
+      "path": "/api/league-matches",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/barcelona-matches",
       "schedule": "0 4 * * *"
     }
   ]

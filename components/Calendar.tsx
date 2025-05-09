@@ -8,6 +8,7 @@ import frLocale from "@fullcalendar/core/locales/fr";
 
 type EventData = {
   start: string;
+  title: string;
   team1: { code: string; logo: string };
   team2: { code: string; logo: string };
 };
@@ -20,30 +21,45 @@ export default function Calendar() {
   useEffect(() => {
     const loadEvents = async () => {
       try {
-        const res = await fetch("/calendar-esport.json");
-
-        if (!res.ok) {
-          console.error("Erreur lors du chargement du fichier JSON");
+        // Charger les matchs e-sport
+        const esportRes = await fetch("/calendar-esport.json");
+        if (!esportRes.ok) {
+          console.error("Erreur lors du chargement des matchs e-sport");
           return;
         }
+        const esportData: EventData[] = await esportRes.json();
 
-        const data: EventData[] = await res.json();
-        console.log(data);
+        // Charger les matchs du Barça
+        const barcelonaRes = await fetch("/calendar-barcelona.json");
+        if (!barcelonaRes.ok) {
+          console.error("Erreur lors du chargement des matchs du Barça");
+          return;
+        }
+        const barcelonaData: EventData[] = await barcelonaRes.json();
 
-        const formattedEvents = data
+        // Charger les matchs de la France
+        const franceRes = await fetch("/calendar-france.json");
+        if (!franceRes.ok) {
+          console.error("Erreur lors du chargement des matchs de la France");
+          return;
+        }
+        const franceData: EventData[] = await franceRes.json();
+
+        // Combiner les deux jeux de données
+        const combinedData = [...esportData, ...barcelonaData, ...franceData];
+
+        // Filtrer et formater les événements
+        const formattedEvents = combinedData
           .filter((event) => event.team1 && event.team2 && event.start)
           .map((event) => {
-            console.log("oui");
-
-            const teamNames = `${event.team1.code} vs ${event.team2.code}`;
-
             // Retourne l'événement formaté
             return {
-              title: teamNames,
+              title: event.title,
               start: event.start,
             };
           });
 
+        console.log(formattedEvents);
         setEvents(formattedEvents);
       } catch (err) {
         console.error("Erreur lors du chargement des matchs :", err);

@@ -5,10 +5,8 @@ import path from "path";
 
 export async function GET() {
   try {
-    // Récupération des matchs depuis l'API
     const matches = await fetchMatches();
 
-    // Transformation des données en un format simplifié pour le calendrier
     const calendarEvents = matches
       .map((event) => {
         if (!event.match) {
