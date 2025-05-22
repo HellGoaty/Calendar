@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
@@ -8,6 +8,9 @@ import frLocale from "@fullcalendar/core/locales/fr";
 import { EventClickArg } from "@fullcalendar/core";
 import interactionPlugin, { DateClickArg } from "@fullcalendar/interaction";
 import EventModal from "@/components/EventModal";
+
+import { createRoot } from "react-dom/client";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 type CalendarEvent = {
   title: string;
@@ -25,8 +28,9 @@ export default function Calendar() {
   const [eventToEdit, setEventToEdit] = useState<CalendarEvent | null>(null);
   const [darkMode, setDarkMode] = useState(false); // État pour basculer entre les modes
 
+  const themeButtonRootRef = useRef<ReturnType<typeof createRoot> | null>(null);
+
   useEffect(() => {
-    // Applique le mode sombre ou clair en fonction de l'état
     if (darkMode) {
       document.body.setAttribute("data-theme", "dark");
     } else {
@@ -118,21 +122,38 @@ export default function Calendar() {
     }
   };
 
+  useEffect(() => {
+    const btnEl = document.querySelector(".fc-toggleTheme-button");
+
+    if (btnEl) {
+      let container = btnEl.querySelector("#react-theme-toggle");
+
+      if (!container) {
+        container = document.createElement("div");
+        container.id = "react-theme-toggle";
+
+        btnEl.innerHTML = ""; // vide le contenu natif du bouton FullCalendar
+        btnEl.appendChild(container);
+
+        themeButtonRootRef.current = createRoot(container);
+      }
+
+      if (themeButtonRootRef.current) {
+        themeButtonRootRef.current.render(
+          <ThemeToggleButton
+            darkMode={darkMode}
+            toggle={() => setDarkMode((prev) => !prev)}
+          />
+        );
+      }
+    }
+  }, [darkMode]);
+
   return (
     <div className="p-4">
-      <div className="mb-4 flex justify-end">
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="px-4 py-2 bg-gray-800 text-white rounded"
-        >
-          {darkMode ? "Mode Clair" : "Mode Sombre"}
-        </button>
-      </div>
       <FullCalendar
-        slotDuration="00:15:00"
-        /* 👇️ Affichage des labels horaires seulement toutes les heures */
+        slotDuration="00:30:00"
         slotLabelInterval="01:00"
-        /* 👇️ Format des labels horaires */
         slotLabelFormat={{
           hour: "2-digit",
           minute: "2-digit",
@@ -191,7 +212,18 @@ export default function Calendar() {
             body: JSON.stringify(updated),
           });
         }}
-        contentHeight={550}
+        contentHeight={600}
+        customButtons={{
+          toggleTheme: {
+            text: "", // on injecte une icône manuellement ensuite
+            click: () => setDarkMode((prev) => !prev),
+          },
+        }}
+        headerToolbar={{
+          left: "prev,next today",
+          center: "title",
+          right: "toggleTheme timeGridWeek,dayGridMonth",
+        }}
       />
 
       <EventModal

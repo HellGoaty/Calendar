@@ -1,7 +1,19 @@
 @import "tailwindcss";
 
+.fc .fc-timegrid-slot {
+  height: 15px !important;
+}
+
 .fc .fc-timegrid-slot-minor {
   border-top-style: none;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem;
+}
+
+.fc .fc-timegrid-slot {
+  height: 1em;
 }
 
 /* Mode sombre */
