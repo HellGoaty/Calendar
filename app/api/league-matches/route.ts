@@ -18,6 +18,7 @@ export async function GET() {
         return {
           title: `${team1.code} vs ${team2.code}`,
           start: event.startTime,
+          category: "match",
           team1: {
             code: team1.code,
             logo: team1.image,

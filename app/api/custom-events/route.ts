@@ -2,8 +2,10 @@ import { writeFile, readFile } from "fs/promises";
 import path from "path";
 import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
+import { randomUUID } from "crypto";
 
 type CustomEvent = {
+  id: string;
   title: string;
   start: string;
   end?: string;
@@ -15,6 +17,11 @@ export async function POST(req: Request) {
   try {
     const body = await req.text();
     const newEvent = JSON.parse(body);
+
+    // ✅ Générer un ID si absent
+    if (!newEvent.id) {
+      newEvent.id = randomUUID();
+    }
 
     let existingData: CustomEvent[] = [];
 
@@ -39,7 +46,7 @@ export async function POST(req: Request) {
 
     await writeFile(filePath, JSON.stringify(existingData, null, 2), "utf-8");
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, event: newEvent }); // ✅ renvoyer l'événement avec id
   } catch (err) {
     console.error("Erreur dans POST /custom-events :", err);
     return NextResponse.json(
@@ -52,12 +59,13 @@ export async function POST(req: Request) {
 export async function PATCH(req: Request) {
   try {
     const updatedEvent = await req.json();
+
     const dataRaw = await fs.readFile(filePath, "utf-8").catch(() => "[]");
     const events = JSON.parse(dataRaw);
 
+    // ✅ Utiliser l'id pour retrouver l'événement
     const index = events.findIndex(
-      (e: CustomEvent) =>
-        e.title === updatedEvent.title && e.start === updatedEvent.originalStart
+      (e: CustomEvent) => e.id === updatedEvent.id
     );
 
     if (index === -1) {
@@ -67,12 +75,9 @@ export async function PATCH(req: Request) {
       );
     }
 
-    // Mise à jour
     events[index] = {
       ...events[index],
-      start: updatedEvent.start,
-      end: updatedEvent.end ?? null,
-      title: updatedEvent.title,
+      ...updatedEvent, // ✅ merge tout (incluant start, end, title...)
     };
 
     await fs.writeFile(filePath, JSON.stringify(events, null, 2));
@@ -90,28 +95,20 @@ export async function DELETE(req: Request) {
   try {
     const deletedEvent = await req.json();
 
-    // Lire les événements depuis le fichier
     const dataRaw = await fs.readFile(filePath, "utf-8").catch(() => "[]");
     const events = JSON.parse(dataRaw);
 
-    // Chercher l'événement à supprimer
+    // ✅ Supprimer par ID
     const index = events.findIndex(
-      (e: CustomEvent) =>
-        e.title === deletedEvent.title && e.start === deletedEvent.start
+      (e: CustomEvent) => e.id === deletedEvent.id
     );
 
-    // Si l'événement n'est pas trouvé, retourner une erreur
     if (index === -1) {
-      return NextResponse.json(
-        { success: false, message: "Événement non trouvé." },
-        { status: 404 }
-      );
+      // ✅ Répondre avec succès même si déjà supprimé (idempotent)
+      return NextResponse.json({ success: true });
     }
 
-    // Supprimer l'événement du tableau
     events.splice(index, 1);
-
-    // Réécrire le fichier sans l'événement supprimé
     await fs.writeFile(filePath, JSON.stringify(events, null, 2));
 
     return NextResponse.json({ success: true });

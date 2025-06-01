@@ -9,10 +9,15 @@ export default function ThemeToggleButton({
   toggle: () => void;
 }) {
   return (
-    <button onClick={toggle}>
+    <button onClick={toggle} className="w-5 h-[100%]">
       <FontAwesomeIcon
+        onClick={toggle}
         icon={darkMode ? faSun : faMoon}
-        className={darkMode ? "text-yellow-400" : "text-blue-700"}
+        className={
+          darkMode
+            ? "text-yellow-400 cursor-pointer"
+            : "text-white cursor-pointer"
+        }
       />
     </button>
   );

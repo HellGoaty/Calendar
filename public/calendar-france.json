@@ -1,7 +1,8 @@
 [
   {
     "title": "Spain vs France",
-    "start": "2025-06-05T20:45:00+02:00",
+    "start": "2025-06-05T21:00:00+02:00",
+    "category": "match",
     "team1": {
       "id": 9,
       "name": "Spain",
@@ -16,6 +17,7 @@
   {
     "title": "Ukraine vs France",
     "start": "2025-09-05T20:45:00+02:00",
+    "category": "match",
     "team1": {
       "id": 772,
       "name": "Ukraine",
@@ -30,6 +32,7 @@
   {
     "title": "France vs Iceland",
     "start": "2025-09-09T20:45:00+02:00",
+    "category": "match",
     "team1": {
       "id": 2,
       "name": "France",
@@ -44,6 +47,7 @@
   {
     "title": "France vs Azerbaijan",
     "start": "2025-10-10T20:45:00+02:00",
+    "category": "match",
     "team1": {
       "id": 2,
       "name": "France",
@@ -58,6 +62,7 @@
   {
     "title": "Iceland vs France",
     "start": "2025-10-13T20:45:00+02:00",
+    "category": "match",
     "team1": {
       "id": 18,
       "name": "Iceland",
@@ -72,6 +77,7 @@
   {
     "title": "France vs Ukraine",
     "start": "2025-11-13T20:45:00+01:00",
+    "category": "match",
     "team1": {
       "id": 2,
       "name": "France",
@@ -86,6 +92,7 @@
   {
     "title": "Azerbaijan vs France",
     "start": "2025-11-16T18:00:00+01:00",
+    "category": "match",
     "team1": {
       "id": 1096,
       "name": "Azerbaijan",

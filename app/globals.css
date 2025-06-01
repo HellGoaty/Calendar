@@ -4,6 +4,37 @@
   height: 15px !important;
 }
 
+.fc .fc-timegrid-axis-cushion {
+  max-width: none;
+}
+
+.fc-direction-ltr .fc-timegrid-slot-label-frame {
+  text-align: center;
+  transform: translateY(10px);
+}
+
+body[data-theme="dark"] .fc-daygrid-day {
+  border: solid 1px white !important;
+}
+
+body[data-theme="dark"] td,
+body[data-theme="dark"] th,
+body[data-theme="dark"] tr,
+body[data-theme="dark"] .fc .fc-daygrid-day,
+body[data-theme="dark"] table {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.fc-daygrid-day {
+  background: rgb(248, 248, 248);
+}
+
+.fc .fc-timegrid-divider {
+  padding: 0;
+  border: none !important;
+  display: none;
+}
+
 .fc .fc-timegrid-slot-minor {
   border-top-style: none;
 }
@@ -65,4 +96,8 @@ body[data-theme="dark"] .fc-button {
 body[data-theme="dark"] .fc-button:focus,
 body[data-theme="dark"] .fc-button:hover {
   background-color: #2563eb;
+}
+
+body[data-theme="dark"] .modal {
+  background: black;
 }

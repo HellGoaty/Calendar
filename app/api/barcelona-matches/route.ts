@@ -41,6 +41,7 @@ export async function GET() {
     const formattedMatches = fixtures.map((fixture: FixtureInfo) => ({
       title: `${fixture.teams.home.name} vs ${fixture.teams.away.name}`,
       start: fixture.fixture.date,
+      category: "match",
       team1: {
         id: fixture.teams.home.id,
         name: fixture.teams.home.name,

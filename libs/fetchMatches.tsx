@@ -11,6 +11,7 @@ type Match = {
 type Event = {
   match?: Match;
   startTime: string;
+  type: string;
   league: {
     name: string;
     slug: string;

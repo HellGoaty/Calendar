@@ -1,1 +1,232 @@
-[]
+[
+  {
+    "title": "Code",
+    "start": "2025-05-26T14:00:00",
+    "backgroundColor": "#f59e0b",
+    "borderColor": "#f59e0b",
+    "category": "travail",
+    "id": "8152444a-59be-4069-9c01-7e87f740530b"
+  },
+  {
+    "title": "Clair Obscur",
+    "start": "2025-05-26T17:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "8b514e44-467e-47a6-9eaf-269a66235158"
+  },
+  {
+    "title": "Manger",
+    "start": "2025-05-26T20:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "0702e910-9198-4fd6-878f-4428e5554fec",
+    "originalStart": "2025-05-26T18:00:00",
+    "end": ""
+  },
+  {
+    "title": "CS GO",
+    "start": "2025-05-26T15:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "bb9f49e7-2df5-409a-b7bb-4779733935c9",
+    "originalStart": "2025-05-26T16:00:00",
+    "end": ""
+  },
+  {
+    "title": "Murder Party",
+    "start": "2025-05-27T14:00:00",
+    "backgroundColor": "#f59e0b",
+    "borderColor": "#f59e0b",
+    "category": "travail",
+    "id": "c41e781d-6abb-455e-9841-fb3596b646bb"
+  },
+  {
+    "title": "Coding",
+    "start": "2025-05-28T19:30:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "09f496a6-5167-4784-ba43-5d94af43a19b"
+  },
+  {
+    "title": "Manger",
+    "start": "2025-05-28T21:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "6b94b76c-a796-4645-9c37-e68e430d1eb4"
+  },
+  {
+    "title": "Movie",
+    "start": "2025-05-28T22:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "26ca64bc-8c25-4626-8afb-c77ac2dd8d6d"
+  },
+  {
+    "title": "Grands Parents",
+    "start": "2025-05-29",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "08c80a87-2ee9-4a46-8617-af25596b1af4"
+  },
+  {
+    "title": "Grands parents",
+    "start": "2025-05-30",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "716be248-ab90-4d9a-b716-90a034576bbe"
+  },
+  {
+    "title": "Split Fiction",
+    "start": "2025-05-31T14:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "10391931-40a7-47f3-8afa-abe7846a5ff2",
+    "originalStart": "2025-05-31T14:00:00",
+    "end": "2025-05-31T16:00:00"
+  },
+  {
+    "title": "Manger",
+    "start": "2025-05-30T20:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "564c46b3-c2da-46f2-b06f-feb76b26c520",
+    "originalStart": "2025-05-30T19:30:00",
+    "end": ""
+  },
+  {
+    "title": "Voituree",
+    "start": "2025-05-29T08:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "974d179e-125d-43c2-8142-d05522e7bb9f",
+    "originalStart": "2025-05-29T08:30:00",
+    "end": "2025-05-29T09:30:00"
+  },
+  {
+    "title": "Voiture",
+    "start": "2025-05-30T16:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "0d86ecdf-2466-4b42-a862-0d0ab2d12cf1",
+    "originalStart": "2025-05-30T17:00:00",
+    "end": ""
+  },
+  {
+    "title": "Manger",
+    "start": "2025-05-31T12:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "102c71bc-6b82-46bd-9630-6877b95226cd",
+    "originalStart": "2025-05-31T12:30:00",
+    "end": ""
+  },
+  {
+    "title": "Manger",
+    "start": "2025-06-01T13:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "bf9f043e-1625-4cbb-b78f-b197e7ddaa73",
+    "originalStart": "2025-06-01T12:00:00",
+    "end": ""
+  },
+  {
+    "title": "Manger",
+    "start": "2025-05-29T12:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "1ffa0d2e-4364-4fce-b330-03096efe3ce2",
+    "originalStart": "2025-05-29T12:30:00",
+    "end": ""
+  },
+  {
+    "title": "PSG Milan",
+    "start": "2025-05-31T21:00:00",
+    "backgroundColor": "#ef4444",
+    "borderColor": "#ef4444",
+    "category": "match",
+    "id": "0181f2d2-c603-4d67-abda-baf239cdfc9a",
+    "originalStart": "2025-06-01T21:00:00",
+    "end": "2025-05-31T23:00:00"
+  },
+  {
+    "title": "Manger",
+    "start": "2025-06-01T20:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "6186d7d6-791d-484a-954f-bbfcb5ad7b44",
+    "originalStart": "2025-06-01T16:30:00",
+    "end": ""
+  },
+  {
+    "title": "Code",
+    "start": "2025-05-31T08:30:00",
+    "backgroundColor": "#f59e0b",
+    "borderColor": "#f59e0b",
+    "category": "travail",
+    "id": "ebfd2a62-7a4f-41d5-8575-24a16f396f65",
+    "originalStart": "2025-05-31T08:30:00",
+    "end": "2025-05-31T10:00:00"
+  },
+  {
+    "title": "Clair Obscur",
+    "start": "2025-05-31T10:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "661e443a-c97d-4f2b-958e-29c06883d9fe",
+    "originalStart": "2025-05-31T10:00:00",
+    "end": "2025-05-31T12:00:00"
+  },
+  {
+    "title": "Manger",
+    "start": "2025-05-31T20:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "40b4cddb-5079-4f54-89a1-3c1dbd7c1145"
+  },
+  {
+    "title": "Code",
+    "start": "2025-06-01T12:00:00",
+    "backgroundColor": "#f59e0b",
+    "borderColor": "#f59e0b",
+    "category": "travail",
+    "id": "adf09537-5a49-4004-a172-453cbd78dac1"
+  },
+  {
+    "title": "Code",
+    "start": "2025-06-01T14:00:00",
+    "backgroundColor": "#f59e0b",
+    "borderColor": "#f59e0b",
+    "category": "travail",
+    "id": "d4931f7a-0c0a-4d08-a854-cdc7cfa5ba1b",
+    "originalStart": "2025-06-01T14:00:00",
+    "end": "2025-06-01T16:00:00"
+  },
+  {
+    "title": "Gaming Nono",
+    "start": "2025-06-01T16:00:00",
+    "backgroundColor": "#3b82f6",
+    "borderColor": "#3b82f6",
+    "category": "perso",
+    "id": "21dac72a-ebdd-4789-96fa-385597bd183c",
+    "originalStart": "2025-06-01T16:00:00",
+    "end": "2025-06-01T19:00:00"
+  }
+]
